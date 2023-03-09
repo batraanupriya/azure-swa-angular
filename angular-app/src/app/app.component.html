@@ -354,12 +354,14 @@
   <h2>Let's get some data on the page!</h2>
 
   <div class="card-container">
-    <li *ngFor="let user of user$ | async;">
-      <span>{{ user.first_name }} {{ user.last_name }}</span>
-    </li>
+    <ul>
+      <li *ngFor="let user of user$ | async;">
+        <span>{{ user.first_name }} {{ user.last_name }}</span>
+      </li>
+    </ul>
   </div>
 
-  
+
   <h2>Resources</h2>
   <p>Here are some links to help you get started:</p>
 
